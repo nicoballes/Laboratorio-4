@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades de Frutas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Frutas</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('listaDesordenada')">Frutas Desordenadas</a></li>
+            <li><a href="#" onclick="showSection('listaOrdenada')">Frutas Ordenadas</a></li>
+            <li><a href="#" onclick="showSection('listaAnidada')">Frutas Anidadas</a></li>
+            <li><a href="#" onclick="showSection('tabla')">Tabla de Frutas</a></li>
+        </ul>
+    </nav>
+
+    <div id="listaDesordenada" class="section" style="display: none;">
+        <h2>Frutas Desordenadas</h2>
+        <ul>
+            <li>Manzana</li>
+            <li>Plátano</li>
+            <li>Naranja</li>
+        </ul>
+    </div>
+
+    <div id="listaOrdenada" class="section" style="display: none;">
+        <h2>Frutas Ordenadas</h2>
+        <ol>
+            <li>Fresa</li>
+            <li>Kiwi</li>
+            <li>Mango</li>
+        </ol>
+    </div>
+
+    <div id="listaAnidada" class="section" style="display: none;">
+        <h2>Frutas Anidadas</h2>
+        <ul>
+            <li>Cítricos
+                <ul>
+                    <li>Naranja</li>
+                    <li>Limón</li>
+                    <li>Lima</li>
+                </ul>
+            </li>
+            <li>Frutas Tropicales
+                <ul>
+                    <li>Mango</li>
+                    <li>Papaia</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="tabla" class="section" style="display: none;">
+        <h2>Tabla de Frutas</h2>
+        <table border="1">
+            <tr>
+                <th>Fruta</th>
+                <th>Color</th>
+                <th>Precio por kg</th>
+            </tr>
+            <tr>
+                <td>Manzana</td>
+                <td>Rojo</td>
+                <td>$3.00</td>
+            </tr>
+            <tr>
+                <td>Plátano</td>
+                <td>Amarillo</td>
+                <td>$1.50</td>
+            </tr>
+            <tr>
+                <td>Naranja</td>
+                <td>Naranja</td>
+                <td>$2.00</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
